@@ -1,0 +1,9 @@
+{
+	"name": "MonaliADF-Demo",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5365c02e-e9cd-4274-bb93-65041cdc123a",
+		"tenantId": "d074e917-c8d9-42cc-8986-2cd1bdfbd079"
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"name": "read_write_file_ADF",
+	"properties": {
+		"activities": [
+			{
+				"name": "readWriteNotebook",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/monali.sahare@diggibyte.com/read_write_ADF_assignment1"
+				},
+				"linkedServiceName": {
+					"referenceName": "Azuredatabricks1_Monali",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2022-09-08T11:26:36Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

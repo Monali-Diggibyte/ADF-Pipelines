@@ -1,0 +1,25 @@
+{
+	"name": "SilverDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LinkedService_monalistorageaccount1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "emp_details.csv",
+				"folderPath": "Silver",
+				"container": "monali-container"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

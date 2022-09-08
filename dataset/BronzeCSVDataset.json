@@ -1,0 +1,46 @@
+{
+	"name": "BronzeCSVDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LinkedService_monalistorageaccount1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "emp_details.csv",
+				"folderPath": "Bronze",
+				"container": "monali-container"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Employee_id",
+				"type": "String"
+			},
+			{
+				"name": "Emp_First_name",
+				"type": "String"
+			},
+			{
+				"name": "Emp_Last_Same",
+				"type": "String"
+			},
+			{
+				"name": "Experience",
+				"type": "String"
+			},
+			{
+				"name": "Salary",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
