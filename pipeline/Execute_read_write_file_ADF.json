@@ -1,0 +1,24 @@
+{
+	"name": "Execute_read_write_file_ADF",
+	"properties": {
+		"activities": [
+			{
+				"name": "Execute_read_write_file_ADF",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "read_write_file_ADF",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			}
+		],
+		"folder": {
+			"name": "feature"
+		},
+		"annotations": []
+	}
+}
